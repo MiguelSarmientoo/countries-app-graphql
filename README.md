@@ -26,7 +26,7 @@ A React application that displays detailed information about various countries u
 
   cd countriesapp
   
-Install the dependencies:
+3. Install the dependencies:
 
   npm install
   
