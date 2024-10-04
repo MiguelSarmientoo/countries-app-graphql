@@ -24,11 +24,11 @@ A React application that displays detailed information about various countries u
 
 2. Navigate to the project directory:
 
-  cd countriesapp
+   cd countriesapp
   
 3. Install the dependencies:
 
-  npm install
+   npm install
   
 ## Usage
 
