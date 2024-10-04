@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Countries App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that displays detailed information about various countries using the [Countries](https://countries.trevorblades.com/) API. The app features a sidebar for organized navigation and presents each country's name, flag, and reference photo.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Displays information about different countries, including their name, flag, and reference photo.
+- Sidebar for easy navigation between countries.
+- Clean and responsive user interface.
+- Utilizes GraphQL to fetch data from the API.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- *React*: Library for building user interfaces.
+- *GraphQL*: Query language for APIs used to retrieve data.
+- *CSS*: For styling and design of the application.
+- *Axios*: For making HTTP requests.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   git clone https://github.com/MiguelSarmientoo/countriesapp.git
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  cd countriesapp
+  
+Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  npm install
+  
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start the application:
+  
+  npm start
 
-### `npm run eject`
+2. Open your browser and visit http://localhost:3000 to view the application in action.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+countriesapp/
+├── public/
+│   ├── index.html
+├── src/
+│   ├── apollo/
+│   │   └── apolloClient.js            # Apollo Client configuration for GraphQL
+│   ├── components/
+│   │   ├── CountryCard.js             # Component to display brief country information
+│   │   ├── CountryDetails.js          # Component for detailed country information
+│   │   ├── CountryList.js             # Component that lists all the countries
+│   │   ├── SearchBar.js               # Search bar component for filtering countries
+│   │   ├── SideBar.js                 # Sidebar component for navigation
+│   │   ├── Vista1.js                  # Example of an additional view component
+│   │   ├── Vista2.js                  # Example of another additional view component
+│   ├── graphql/
+│   │   └── queries.js                 # GraphQL queries for fetching data
+│   ├── services/
+│   │   └── unsplashService.js         # Service to fetch images from Unsplash API
+│   ├── styles/
+│   │   ├── CountryDetails.css         # Styles specific to the CountryDetails component
+│   │   ├── CountryList.css            # Styles specific to the CountryList component
+│   │   └── styles.css                 # Global styles for the application
+│   ├── App.js                         # Main component of the application
+│   ├── index.js                       # Entry point of the application
+├── .env                               # Environment variables
+├── .gitignore                         # Git ignore file
+├── README.md                          # Project documentation
+├── package-lock.json                  # Locked versions of installed packages
+├── package.json                       # Project metadata and dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
